@@ -10,7 +10,8 @@
     ],
     "require": {
         "codememory/fs": "^1.0",
-        "codememory/support": "^1.0"
+        "codememory/support": "^1.0",
+        "ext-fileinfo": "*"
     },
     "autoload": {
         "psr-4": {

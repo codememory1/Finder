@@ -33,7 +33,18 @@ class Find implements FinderInterface
     {
 
         $this->file = new File();
-        $this->fs = $this->file->scanning('/', true);
+
+    }
+
+    /**
+     * @inheritDoc
+     */
+    public function setPathForFind(string $path): FinderInterface
+    {
+
+        $this->fs = $this->file->scanning($path, true);
+
+        return $this;
 
     }
 
@@ -256,8 +267,6 @@ class Find implements FinderInterface
     {
 
         unset($this->fs[$index]);
-
-        return;
 
     }
 
