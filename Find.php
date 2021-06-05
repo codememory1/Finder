@@ -24,7 +24,7 @@ class Find implements FinderInterface
     /**
      * @var array
      */
-    private array $fs;
+    private array $fs = [];
 
     /**
      * Find constructor.
